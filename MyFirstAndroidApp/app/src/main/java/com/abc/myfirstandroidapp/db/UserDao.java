@@ -58,11 +58,10 @@ public List<User> getAllUser(){
     List<User> list = new ArrayList<>();
     SQLiteDatabase db = dbHelper.getReadableDatabase();
     Cursor c = db.rawQuery("select * from users", null);
-    User u = null;
 
     if(c.moveToFirst()){
         do {
-            u = new User(
+            User u = new User(
                     c.getString(1),
                     c.getString(2),
                     c.getString(3),

@@ -1,4 +1,4 @@
-package com.abc.myfirstandroidapp;
+package com.abc.studentapp;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,10 +10,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.abc.myfirstandroidapp.BroadcastExample.BroadcastExActivity;
-import com.abc.myfirstandroidapp.layout.AddressFormActivity;
-import com.abc.myfirstandroidapp.layout.LoginActivity;
-import com.abc.myfirstandroidapp.layout.UserListActivity;
+import com.abc.studentapp.layout.StudentFormActivity;
+import com.abc.studentapp.layout.StudentListActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,25 +26,17 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        Button hLogin = findViewById(R.id.mLogin);
-        Button mList = findViewById(R.id.mList);
-        Button mAddress = findViewById(R.id.mAddress);
-         hLogin.setOnClickListener(v ->{
-             Intent intent = new Intent(this, LoginActivity.class);
-             startActivity(intent);
-         });
+        Button btnForm = findViewById(R.id.btnForm);
+        Button btnList = findViewById(R.id.btnList);
 
-
-        mList.setOnClickListener(v ->{
-            Intent intent = new Intent(this, UserListActivity.class);
+        btnForm.setOnClickListener(v -> {
+            Intent intent = new Intent(this, StudentFormActivity.class);
             startActivity(intent);
         });
 
-        mAddress.setOnClickListener(v ->{
-            Intent intent = new Intent(this, AddressFormActivity.class);
+        btnList.setOnClickListener(v -> {
+            Intent intent = new Intent(this, StudentListActivity.class);
             startActivity(intent);
         });
-
-
     }
 }

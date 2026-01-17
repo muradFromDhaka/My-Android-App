@@ -51,7 +51,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         lAccount.setOnClickListener(v->{
-            Intent intent = new Intent(this, FormActivity.class);
+            Intent intent = new Intent(this, TestformActivity.class);
             startActivity(intent);
         });
 

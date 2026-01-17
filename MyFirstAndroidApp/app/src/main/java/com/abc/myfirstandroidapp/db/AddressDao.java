@@ -55,7 +55,7 @@ public class AddressDao {
          Address ad = null;
         if(c.moveToFirst()){
             do {
-                ad = new com.abc.myfirstandroidapp.entity.Address(
+                ad = new Address(
                         c.getString(1),
                         c.getString(2),
                         c.getString(3)
