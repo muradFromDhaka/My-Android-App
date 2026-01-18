@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/home_24"
+        />
+
+    <item
+        android:id="@+id/nav_first"
+        android:title="first"
+        android:icon="@drawable/balance_24"
+        />
+    <item
+        android:id="@+id/nav_second"
+        android:title="second"
+        android:icon="@drawable/accessibility_24"
+        />
+    <item
+        android:id="@+id/nav_third"
+        android:title="third"
+        android:icon="@drawable/adb_24"
+        />
+    <item
+        android:id="@+id/nav_fourth"
+        android:title="fourth"
+        android:icon="@drawable/moderator_24"
+        />
+
+</menu>
