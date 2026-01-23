@@ -16,6 +16,7 @@ import com.abc.studentapp.db.StudentDao;
 import com.abc.studentapp.entity.Student;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class StudentFormActivity extends AppCompatActivity {
@@ -69,6 +70,7 @@ public class StudentFormActivity extends AppCompatActivity {
         cbTerms = findViewById(R.id.cbTerms);
 
         btnSubmit = findViewById(R.id.btnSubmit);
+
     }
 
     private void setupSpinner() {

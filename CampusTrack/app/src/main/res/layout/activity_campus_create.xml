@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#D6EFF4"
+    tools:context=".layout.CampusCreateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#49DB4F"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="CampusTrack Form"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- Name -->
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <!-- Phone -->
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:inputType="phone" />
+
+        <!-- Address -->
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:inputType="textPostalAddress" />
+
+        <!-- Date of Birth -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth"
+            android:textSize="18sp" />
+
+        <DatePicker
+            android:id="@+id/dpDob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Gender -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+
+            <RadioButton
+                android:id="@+id/rbOthers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Others" />
+        </RadioGroup>
+
+        <!-- Course -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- GPA -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="GPA:"/>
+
+        <EditText
+            android:id="@+id/etGpa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+        <!-- Hobbies -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hobbies:"
+            android:textSize="18sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/cbReading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reading" />
+
+            <CheckBox
+                android:id="@+id/cbSports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sports" />
+
+            <CheckBox
+                android:id="@+id/cbMusic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Music" />
+        </LinearLayout>
+
+        <!-- Skills -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skills:" />
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <CheckBox
+               android:id="@+id/etJava"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Java"
+               android:inputType="textMultiLine" />
+           <CheckBox
+               android:id="@+id/etAngular"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Angular"
+               android:inputType="textMultiLine" />
+           <CheckBox
+               android:id="@+id/etFlutter"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Flutter"
+               android:inputType="textMultiLine" />
+           <CheckBox
+               android:id="@+id/etAndroid"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Android"
+               android:inputType="textMultiLine" />
+           <CheckBox
+               android:id="@+id/etSQL"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="SQL"
+               android:inputType="textMultiLine" />
+       </LinearLayout>
+
+        <!-- Terms -->
+        <CheckBox
+            android:id="@+id/cbTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I accept the terms and conditions" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Submit"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
